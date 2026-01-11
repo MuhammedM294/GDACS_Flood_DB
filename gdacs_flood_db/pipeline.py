@@ -1,12 +1,15 @@
 import csv
 import requests
+import logging
 from datetime import date
 from .config import OUTPUT_CSV
 from .fetch import fetch_window
 from .utils.download_db_utils import normalize_flood_event , month_windows
 from .schema import FLOOD_FIELDS as FIELDS
+from .logger import setup_logging
 
-
+setup_logging()
+logger = logging.getLogger(__name__)
 
 def download_all_floods(
     start_date: date = date(2015, 1, 1),
@@ -29,9 +32,14 @@ def download_all_floods(
             events = fetch_window(session, win_start, win_end)
 
             if len(events) == 100:
-                print(
-                    f"WARNING: {win_start}–{win_end} returned 100 events "
-                    "(unexpected for monthly window)"
+             
+                logger.warning(
+                    "Window %s to %s returned 100 events",
+                    win_start,
+                    win_end,
+                )
+                logger.info(
+                    "Consider reducing the window size to avoid missing data"
                 )
 
             for feature in events:
@@ -44,7 +52,12 @@ def download_all_floods(
                 writer.writerow(normalize_flood_event(feature))
                 total += 1
 
-            print(f"✔ {win_start} → {win_end}: {len(events)} events")
-
-    print(f"\n Finished: {total} unique flood events saved")
-    print(f"Output: {OUTPUT_CSV}")
+            logger.info(
+                "Processed window %s to %s: %d events",
+                win_start,
+                win_end,
+                len(events),
+            )
+    logger.info("Finished downloading flood events. Total unique events: %d", total)
+    logger.info("Output saved to %s", OUTPUT_CSV)
+   
