@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "concurrent-log-handler>=0.9.28",
     "geopandas>=1.1.2",
     "numpy>=2.4.0",
     "pandas>=2.3.3",
