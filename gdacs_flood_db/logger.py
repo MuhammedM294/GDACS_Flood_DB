@@ -1,9 +1,10 @@
 import datetime as dt
 import json
+import os
 import logging.config
 from typing import override
 from pathlib import Path
-
+import concurrent_log_handler
 
 LOG_RECORD_BUILTIN_ATTRS = {
     "args",
@@ -82,11 +83,26 @@ class NonErrorFilter(logging.Filter):
 
 
 def setup_logging():
+
+    # Determine paths
     ROOT_DIR = Path(__file__).resolve().parents[1]
     config_file = ROOT_DIR / "logging_config.json"
+
+    # Ensure log directory exists
+    log_file = ROOT_DIR/ "logs" 
+    log_file.parent.mkdir(parents=True, exist_ok=True)
+
     if config_file.exists():
-        with open(config_file, "rt", encoding="utf-8") as f:
+        with open(config_file, "rt", encoding="utf8") as f:
             config_dict = json.load(f)
+        
+        # allow log level override via environment variable
+        env_log_level = os.getenv("LOG_LEVEL")
+        if env_log_level:
+            config_dict['loggers']['root']['level'] = env_log_level.upper()
         logging.config.dictConfig(config_dict)
     else:
-        logging.basicConfig(level=logging.INFO)
+        logging.basicConfig(
+            level = os.getenv("LOG_LEVEL", "INFO").upper(),
+            format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        )

@@ -6,9 +6,7 @@ from .config import OUTPUT_CSV
 from .fetch import fetch_window
 from .utils.download_db_utils import normalize_flood_event , month_windows
 from .schema import FLOOD_FIELDS as FIELDS
-from .logger import setup_logging
 
-setup_logging()
 logger = logging.getLogger(__name__)
 
 def download_all_floods(

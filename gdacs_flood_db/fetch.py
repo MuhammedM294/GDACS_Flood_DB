@@ -1,4 +1,9 @@
+import logging
+import requests
 from .config import BASE_URL
+
+logger = logging.getLogger(__name__)
+
 
 def fetch_window(session, start, end, retries=3, timeout=30):
     params = {
@@ -9,17 +14,52 @@ def fetch_window(session, start, end, retries=3, timeout=30):
     }
 
     for attempt in range(1, retries + 1):
-        r = session.get(BASE_URL, params=params, timeout=timeout)
+        try:
+            r = session.get(BASE_URL, params=params, timeout=timeout)
+        except requests.RequestException as exc:
+            logger.warning(
+                "Request failed",
+                extra={
+                    "start": start.isoformat(),
+                    "end": end.isoformat(),
+                    "attempt": attempt,
+                    "error": str(exc),
+                },
+            )
+            continue
 
         if r.status_code != 200:
-            print(f"HTTP {r.status_code} for {start} → {end} (attempt {attempt})")
+            logger.warning(
+                "HTTP error while fetching GDACS window",
+                extra={
+                    "status_code": r.status_code,
+                    "start": start.isoformat(),
+                    "end": end.isoformat(),
+                    "attempt": attempt,
+                },
+            )
+
             continue
 
         try:
             payload = r.json()
             return payload.get("features", [])
         except ValueError:
-            print(f"Invalid JSON for {start} → {end} (attempt {attempt})")
+            logger.exception(
+                "Failed to decode JSON response",
+                extra={
+                    "start": start.isoformat(),
+                    "end": end.isoformat(),
+                    "attempt": attempt,
+                },
+            )
 
-    print(f"Skipping window {start} → {end} after {retries} failures")
+    logger.error(
+        "Skipping GDACS window after repeated failures",
+        extra={
+            "start": start.isoformat(),
+            "end": end.isoformat(),
+            "retries": retries,
+        },
+    )
     return []
