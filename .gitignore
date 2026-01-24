@@ -12,4 +12,5 @@ wheels/
 __pycache__/
 *.pyc
 data/*
+data/admin_0_countries/*
 logs/*
