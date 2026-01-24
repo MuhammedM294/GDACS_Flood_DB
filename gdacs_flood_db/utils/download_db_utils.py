@@ -1,5 +1,9 @@
 from datetime import date
-
+from .geo_lookup import country_from_lonlat
+from .country_resolution import (
+    resolve_country_from_gdacs,
+    resolve_continent,
+)
 
 def month_windows(start: date, end: date):
     """
@@ -17,38 +21,54 @@ def month_windows(start: date, end: date):
         current = nxt
 
 
+
+
 def normalize_flood_event(feature: dict) -> dict:
-    """
-    Normalize a GDACS flood event feature into a flat dictionary.
-    """
-    bbox = feature.get("bbox", [])
-    location = feature.get("geometry", {})
     props = feature.get("properties", {})
-    urls = props.get("url") or {}
+    geom = feature.get("geometry", {})
+    lon, lat = geom.get("coordinates", (None, None))
+
+    # Primary source: GDACS
+    country_gdacs = resolve_country_from_gdacs(props)
+    continent_gdacs = resolve_continent(country_gdacs)
+
+    # Secondary source: lon/lat
+    country_ll = country_from_lonlat(lon, lat)
+    continent_ll = resolve_continent(country_ll)
 
     return {
         "GDACS_ID": f"{props.get('eventtype')}-{props.get('eventid')}",
+
+        # primary (GDACS)
+        "country": country_gdacs.get("country_name") if country_gdacs else None,
+        "iso3": country_gdacs.get("iso3") if country_gdacs else None,
+        "continent": continent_gdacs,
+
+        # secondary (lon/lat)
+        "country_lonlat": country_ll.get("country_name") if country_ll else None,
+        "iso3_lonlat": country_ll.get("iso3") if country_ll else None,
+        "continent_lonlat": continent_ll,
+
+        # metadata
         "eventid": props.get("eventid"),
-        "eventtype": props.get("eventtype"),
-        "glide": props.get("glide"),
         "alertlevel": props.get("alertlevel"),
         "alertscore": props.get("alertscore"),
-        "episodealertlevel": props.get("episodealertlevel"),
-        "episodealertscore": props.get("episodealertscore"),
-        "country": props.get("country"),
         "fromdate": props.get("fromdate"),
         "todate": props.get("todate"),
-        "datemodified": props.get("datemodified"),
-        "source": props.get("source"),
-        "affectedcountries": props.get("affectedcountries"),
-        "geometry_url": urls.get("geometry"),
-        "report_url": urls.get("report"),
-        "details_url": urls.get("details"),
-        "bbox": bbox,
-        "location_type": location.get("type"),
-        "location_coordinates": location.get("coordinates"),
+   
+
+        # urls
+        "geometry_url": props.get("url", {}).get("geometry"),
+        "report_url": props.get("url", {}).get("report"),
+        "details_url": props.get("url", {}).get("details"),
+
+        "geometry": geom,
+     
     }
 
+
+
+
+
 if __name__ == "__main__":
-    for start, end in month_windows(date(2020, 1, 15), date(2024, 5, 10)):
-        print(f"From {start} to {end}")
+    pass

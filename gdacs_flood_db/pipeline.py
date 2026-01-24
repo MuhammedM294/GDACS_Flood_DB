@@ -29,7 +29,7 @@ def download_all_floods(
         for win_start, win_end in month_windows(start_date, end_date):
             events = fetch_window(session, win_start, win_end)
 
-            if len(events) == 100:
+            if len(events) >= 100:
              
                 logger.warning(
                     "Window %s to %s returned 100 events",
