@@ -11,6 +11,5 @@ wheels/
 
 __pycache__/
 *.pyc
-data/*.csv
-data/*.geojson
+data/*
 logs/*
