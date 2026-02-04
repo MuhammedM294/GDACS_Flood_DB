@@ -1,0 +1,153 @@
+{"message": "======================================================================", "timestamp": "2026-02-04T14:11:16.078579+00:00"}
+{"message": "GDACS Daily Flood DB Update: 20260204", "timestamp": "2026-02-04T14:11:16.085965+00:00"}
+{"message": "======================================================================", "timestamp": "2026-02-04T14:11:16.088186+00:00"}
+{"message": "Downloading latest GDACS flood database...", "timestamp": "2026-02-04T14:11:16.090454+00:00"}
+{"message": "Processed window 2015-01-01 to 2015-02-01: 8 events", "timestamp": "2026-02-04T14:11:16.893928+00:00"}
+{"message": "Processed window 2015-02-01 to 2015-03-01: 11 events", "timestamp": "2026-02-04T14:11:17.649709+00:00"}
+{"message": "Processed window 2015-03-01 to 2015-04-01: 13 events", "timestamp": "2026-02-04T14:11:18.417414+00:00"}
+{"message": "Processed window 2015-04-01 to 2015-05-01: 13 events", "timestamp": "2026-02-04T14:11:19.176058+00:00"}
+{"message": "Processed window 2015-05-01 to 2015-06-01: 13 events", "timestamp": "2026-02-04T14:11:19.899526+00:00"}
+{"message": "Processed window 2015-06-01 to 2015-07-01: 17 events", "timestamp": "2026-02-04T14:11:20.953627+00:00"}
+{"message": "Processed window 2015-07-01 to 2015-08-01: 14 events", "timestamp": "2026-02-04T14:11:21.743231+00:00"}
+{"message": "Processed window 2015-08-01 to 2015-09-01: 14 events", "timestamp": "2026-02-04T14:11:22.457175+00:00"}
+{"message": "Processed window 2015-09-01 to 2015-10-01: 6 events", "timestamp": "2026-02-04T14:11:23.146807+00:00"}
+{"message": "Processed window 2015-10-01 to 2015-11-01: 14 events", "timestamp": "2026-02-04T14:11:23.945297+00:00"}
+{"message": "Processed window 2015-11-01 to 2015-12-01: 7 events", "timestamp": "2026-02-04T14:11:24.643617+00:00"}
+{"message": "Processed window 2015-12-01 to 2016-01-01: 11 events", "timestamp": "2026-02-04T14:11:25.344964+00:00"}
+{"message": "Processed window 2016-01-01 to 2016-02-01: 17 events", "timestamp": "2026-02-04T14:11:26.135685+00:00"}
+{"message": "Processed window 2016-02-01 to 2016-03-01: 6 events", "timestamp": "2026-02-04T14:11:26.814600+00:00"}
+{"message": "Processed window 2016-03-01 to 2016-04-01: 12 events", "timestamp": "2026-02-04T14:11:27.616088+00:00"}
+{"message": "Processed window 2016-04-01 to 2016-05-01: 14 events", "timestamp": "2026-02-04T14:11:28.339210+00:00"}
+{"message": "Processed window 2016-05-01 to 2016-06-01: 11 events", "timestamp": "2026-02-04T14:11:29.132966+00:00"}
+{"message": "Processed window 2016-06-01 to 2016-07-01: 14 events", "timestamp": "2026-02-04T14:11:29.888745+00:00"}
+{"message": "Processed window 2016-07-01 to 2016-08-01: 20 events", "timestamp": "2026-02-04T14:11:30.661555+00:00"}
+{"message": "Processed window 2016-08-01 to 2016-09-01: 16 events", "timestamp": "2026-02-04T14:11:31.337964+00:00"}
+{"message": "Processed window 2016-09-01 to 2016-10-01: 12 events", "timestamp": "2026-02-04T14:11:32.185843+00:00"}
+{"message": "Processed window 2016-10-01 to 2016-11-01: 14 events", "timestamp": "2026-02-04T14:11:32.949851+00:00"}
+{"message": "Processed window 2016-11-01 to 2016-12-01: 14 events", "timestamp": "2026-02-04T14:11:33.696634+00:00"}
+{"message": "Processed window 2016-12-01 to 2017-01-01: 15 events", "timestamp": "2026-02-04T14:11:34.444137+00:00"}
+{"message": "Processed window 2017-01-01 to 2017-02-01: 20 events", "timestamp": "2026-02-04T14:11:35.231131+00:00"}
+{"message": "Processed window 2017-02-01 to 2017-03-01: 21 events", "timestamp": "2026-02-04T14:11:36.107426+00:00"}
+{"message": "Processed window 2017-03-01 to 2017-04-01: 8 events", "timestamp": "2026-02-04T14:11:36.851387+00:00"}
+{"message": "Processed window 2017-04-01 to 2017-05-01: 10 events", "timestamp": "2026-02-04T14:11:37.752587+00:00"}
+{"message": "Processed window 2017-05-01 to 2017-06-01: 6 events", "timestamp": "2026-02-04T14:11:38.512550+00:00"}
+{"message": "Processed window 2017-06-01 to 2017-07-01: 19 events", "timestamp": "2026-02-04T14:11:39.367147+00:00"}
+{"message": "Processed window 2017-07-01 to 2017-08-01: 17 events", "timestamp": "2026-02-04T14:11:40.203490+00:00"}
+{"message": "Processed window 2017-08-01 to 2017-09-01: 14 events", "timestamp": "2026-02-04T14:11:40.993728+00:00"}
+{"message": "Processed window 2017-09-01 to 2017-10-01: 10 events", "timestamp": "2026-02-04T14:11:41.850894+00:00"}
+{"message": "Processed window 2017-10-01 to 2017-11-01: 6 events", "timestamp": "2026-02-04T14:11:42.533924+00:00"}
+{"message": "Processed window 2017-11-01 to 2017-12-01: 6 events", "timestamp": "2026-02-04T14:11:43.266434+00:00"}
+{"message": "Processed window 2017-12-01 to 2018-01-01: 6 events", "timestamp": "2026-02-04T14:11:44.002682+00:00"}
+{"message": "Processed window 2018-01-01 to 2018-02-01: 9 events", "timestamp": "2026-02-04T14:11:44.834733+00:00"}
+{"message": "Processed window 2018-02-01 to 2018-03-01: 10 events", "timestamp": "2026-02-04T14:11:45.543548+00:00"}
+{"message": "Processed window 2018-03-01 to 2018-04-01: 16 events", "timestamp": "2026-02-04T14:11:46.320305+00:00"}
+{"message": "Processed window 2018-04-01 to 2018-05-01: 10 events", "timestamp": "2026-02-04T14:11:47.000176+00:00"}
+{"message": "Processed window 2018-05-01 to 2018-06-01: 16 events", "timestamp": "2026-02-04T14:11:47.737095+00:00"}
+{"message": "Processed window 2018-06-01 to 2018-07-01: 3 events", "timestamp": "2026-02-04T14:11:48.427112+00:00"}
+{"message": "Processed window 2018-07-01 to 2018-08-01: 4 events", "timestamp": "2026-02-04T14:11:49.242932+00:00"}
+{"message": "Processed window 2018-08-01 to 2018-09-01: 3 events", "timestamp": "2026-02-04T14:11:49.908137+00:00"}
+{"message": "Processed window 2018-09-01 to 2018-10-01: 3 events", "timestamp": "2026-02-04T14:11:50.570448+00:00"}
+{"message": "Processed window 2018-10-01 to 2018-11-01: 2 events", "timestamp": "2026-02-04T14:11:51.339509+00:00"}
+{"message": "Processed window 2018-11-01 to 2018-12-01: 1 events", "timestamp": "2026-02-04T14:11:52.022175+00:00"}
+{"message": "HTTP error while fetching GDACS window", "timestamp": "2026-02-04T14:11:52.639834+00:00", "status_code": 204, "start": "2018-12-01", "end": "2019-01-01", "attempt": 1}
+{"message": "HTTP error while fetching GDACS window", "timestamp": "2026-02-04T14:11:53.267815+00:00", "status_code": 204, "start": "2018-12-01", "end": "2019-01-01", "attempt": 2}
+{"message": "HTTP error while fetching GDACS window", "timestamp": "2026-02-04T14:11:54.271093+00:00", "status_code": 204, "start": "2018-12-01", "end": "2019-01-01", "attempt": 3}
+{"message": "Skipping GDACS window after repeated failures", "timestamp": "2026-02-04T14:11:54.273901+00:00", "start": "2018-12-01", "end": "2019-01-01", "retries": 3}
+{"message": "Processed window 2018-12-01 to 2019-01-01: 0 events", "timestamp": "2026-02-04T14:11:54.276466+00:00"}
+{"message": "Processed window 2019-01-01 to 2019-02-01: 4 events", "timestamp": "2026-02-04T14:11:54.966272+00:00"}
+{"message": "Processed window 2019-02-01 to 2019-03-01: 6 events", "timestamp": "2026-02-04T14:11:55.634216+00:00"}
+{"message": "Processed window 2019-03-01 to 2019-04-01: 10 events", "timestamp": "2026-02-04T14:11:56.311701+00:00"}
+{"message": "Processed window 2019-04-01 to 2019-05-01: 4 events", "timestamp": "2026-02-04T14:11:56.964979+00:00"}
+{"message": "Processed window 2019-05-01 to 2019-06-01: 8 events", "timestamp": "2026-02-04T14:11:57.760891+00:00"}
+{"message": "Processed window 2019-06-01 to 2019-07-01: 34 events", "timestamp": "2026-02-04T14:11:58.704074+00:00"}
+{"message": "Processed window 2019-07-01 to 2019-08-01: 24 events", "timestamp": "2026-02-04T14:11:59.535945+00:00"}
+{"message": "Processed window 2019-08-01 to 2019-09-01: 35 events", "timestamp": "2026-02-04T14:12:00.388649+00:00"}
+{"message": "Processed window 2019-09-01 to 2019-10-01: 33 events", "timestamp": "2026-02-04T14:12:01.270078+00:00"}
+{"message": "Processed window 2019-10-01 to 2019-11-01: 51 events", "timestamp": "2026-02-04T14:12:02.249445+00:00"}
+{"message": "Processed window 2019-11-01 to 2019-12-01: 32 events", "timestamp": "2026-02-04T14:12:03.090436+00:00"}
+{"message": "Processed window 2019-12-01 to 2020-01-01: 41 events", "timestamp": "2026-02-04T14:12:04.046200+00:00"}
+{"message": "Processed window 2020-01-01 to 2020-02-01: 34 events", "timestamp": "2026-02-04T14:12:04.947820+00:00"}
+{"message": "Processed window 2020-02-01 to 2020-03-01: 34 events", "timestamp": "2026-02-04T14:12:05.890823+00:00"}
+{"message": "Processed window 2020-03-01 to 2020-04-01: 43 events", "timestamp": "2026-02-04T14:12:07.036526+00:00"}
+{"message": "Processed window 2020-04-01 to 2020-05-01: 36 events", "timestamp": "2026-02-04T14:12:07.984153+00:00"}
+{"message": "Processed window 2020-05-01 to 2020-06-01: 35 events", "timestamp": "2026-02-04T14:12:08.962050+00:00"}
+{"message": "Processed window 2020-06-01 to 2020-07-01: 41 events", "timestamp": "2026-02-04T14:12:10.126312+00:00"}
+{"message": "Processed window 2020-07-01 to 2020-08-01: 41 events", "timestamp": "2026-02-04T14:12:11.154996+00:00"}
+{"message": "Processed window 2020-08-01 to 2020-09-01: 38 events", "timestamp": "2026-02-04T14:12:12.076713+00:00"}
+{"message": "Processed window 2020-09-01 to 2020-10-01: 41 events", "timestamp": "2026-02-04T14:12:12.947687+00:00"}
+{"message": "Processed window 2020-10-01 to 2020-11-01: 34 events", "timestamp": "2026-02-04T14:12:13.841331+00:00"}
+{"message": "Processed window 2020-11-01 to 2020-12-01: 32 events", "timestamp": "2026-02-04T14:12:14.752061+00:00"}
+{"message": "Processed window 2020-12-01 to 2021-01-01: 32 events", "timestamp": "2026-02-04T14:12:15.678182+00:00"}
+{"message": "Processed window 2021-01-01 to 2021-02-01: 44 events", "timestamp": "2026-02-04T14:12:16.684625+00:00"}
+{"message": "Processed window 2021-02-01 to 2021-03-01: 41 events", "timestamp": "2026-02-04T14:12:17.682309+00:00"}
+{"message": "Processed window 2021-03-01 to 2021-04-01: 32 events", "timestamp": "2026-02-04T14:12:18.590351+00:00"}
+{"message": "Processed window 2021-04-01 to 2021-05-01: 49 events", "timestamp": "2026-02-04T14:12:19.660414+00:00"}
+{"message": "Processed window 2021-05-01 to 2021-06-01: 54 events", "timestamp": "2026-02-04T14:12:20.722566+00:00"}
+{"message": "Processed window 2021-06-01 to 2021-07-01: 50 events", "timestamp": "2026-02-04T14:12:21.759781+00:00"}
+{"message": "Processed window 2021-07-01 to 2021-08-01: 83 events", "timestamp": "2026-02-04T14:12:22.998166+00:00"}
+{"message": "Processed window 2021-08-01 to 2021-09-01: 69 events", "timestamp": "2026-02-04T14:12:24.099021+00:00"}
+{"message": "Processed window 2021-09-01 to 2021-10-01: 48 events", "timestamp": "2026-02-04T14:12:25.049929+00:00"}
+{"message": "Processed window 2021-10-01 to 2021-11-01: 40 events", "timestamp": "2026-02-04T14:12:26.211196+00:00"}
+{"message": "Processed window 2021-11-01 to 2021-12-01: 44 events", "timestamp": "2026-02-04T14:12:27.207507+00:00"}
+{"message": "Processed window 2021-12-01 to 2022-01-01: 53 events", "timestamp": "2026-02-04T14:12:28.310579+00:00"}
+{"message": "Processed window 2022-01-01 to 2022-02-01: 51 events", "timestamp": "2026-02-04T14:12:29.278743+00:00"}
+{"message": "Processed window 2022-02-01 to 2022-03-01: 27 events", "timestamp": "2026-02-04T14:12:30.285005+00:00"}
+{"message": "Processed window 2022-03-01 to 2022-04-01: 41 events", "timestamp": "2026-02-04T14:12:31.327372+00:00"}
+{"message": "Processed window 2022-04-01 to 2022-05-01: 62 events", "timestamp": "2026-02-04T14:12:32.569298+00:00"}
+{"message": "Processed window 2022-05-01 to 2022-06-01: 71 events", "timestamp": "2026-02-04T14:12:34.096797+00:00"}
+{"message": "Processed window 2022-06-01 to 2022-07-01: 70 events", "timestamp": "2026-02-04T14:12:35.237574+00:00"}
+{"message": "Processed window 2022-07-01 to 2022-08-01: 76 events", "timestamp": "2026-02-04T14:12:36.424148+00:00"}
+{"message": "Processed window 2022-08-01 to 2022-09-01: 76 events", "timestamp": "2026-02-04T14:12:37.600627+00:00"}
+{"message": "Processed window 2022-09-01 to 2022-10-01: 68 events", "timestamp": "2026-02-04T14:12:38.790692+00:00"}
+{"message": "Processed window 2022-10-01 to 2022-11-01: 40 events", "timestamp": "2026-02-04T14:12:39.757386+00:00"}
+{"message": "Processed window 2022-11-01 to 2022-12-01: 51 events", "timestamp": "2026-02-04T14:12:40.810226+00:00"}
+{"message": "Processed window 2022-12-01 to 2023-01-01: 44 events", "timestamp": "2026-02-04T14:12:41.769342+00:00"}
+{"message": "Processed window 2023-01-01 to 2023-02-01: 52 events", "timestamp": "2026-02-04T14:12:43.031879+00:00"}
+{"message": "Processed window 2023-02-01 to 2023-03-01: 40 events", "timestamp": "2026-02-04T14:12:44.061027+00:00"}
+{"message": "Processed window 2023-03-01 to 2023-04-01: 55 events", "timestamp": "2026-02-04T14:12:45.212472+00:00"}
+{"message": "Processed window 2023-04-01 to 2023-05-01: 64 events", "timestamp": "2026-02-04T14:12:46.426400+00:00"}
+{"message": "Processed window 2023-05-01 to 2023-06-01: 78 events", "timestamp": "2026-02-04T14:12:47.658547+00:00"}
+{"message": "Processed window 2023-06-01 to 2023-07-01: 80 events", "timestamp": "2026-02-04T14:12:48.910596+00:00"}
+{"message": "Processed window 2023-07-01 to 2023-08-01: 52 events", "timestamp": "2026-02-04T14:12:50.049908+00:00"}
+{"message": "Processed window 2023-08-01 to 2023-09-01: 53 events", "timestamp": "2026-02-04T14:12:51.059256+00:00"}
+{"message": "Processed window 2023-09-01 to 2023-10-01: 53 events", "timestamp": "2026-02-04T14:12:52.146606+00:00"}
+{"message": "Processed window 2023-10-01 to 2023-11-01: 66 events", "timestamp": "2026-02-04T14:12:53.590067+00:00"}
+{"message": "Processed window 2023-11-01 to 2023-12-01: 76 events", "timestamp": "2026-02-04T14:12:54.829828+00:00"}
+{"message": "Processed window 2023-12-01 to 2024-01-01: 61 events", "timestamp": "2026-02-04T14:12:55.939050+00:00"}
+{"message": "Processed window 2024-01-01 to 2024-02-01: 44 events", "timestamp": "2026-02-04T14:12:56.917366+00:00"}
+{"message": "Processed window 2024-02-01 to 2024-03-01: 57 events", "timestamp": "2026-02-04T14:12:58.042605+00:00"}
+{"message": "Processed window 2024-03-01 to 2024-04-01: 64 events", "timestamp": "2026-02-04T14:12:59.191341+00:00"}
+{"message": "Processed window 2024-04-01 to 2024-05-01: 62 events", "timestamp": "2026-02-04T14:13:00.208877+00:00"}
+{"message": "Processed window 2024-05-01 to 2024-06-01: 73 events", "timestamp": "2026-02-04T14:13:01.405937+00:00"}
+{"message": "Processed window 2024-06-01 to 2024-07-01: 88 events", "timestamp": "2026-02-04T14:13:02.772372+00:00"}
+{"message": "Processed window 2024-07-01 to 2024-08-01: 87 events", "timestamp": "2026-02-04T14:13:03.925343+00:00"}
+{"message": "Processed window 2024-08-01 to 2024-09-01: 90 events", "timestamp": "2026-02-04T14:13:05.140925+00:00"}
+{"message": "Processed window 2024-09-01 to 2024-10-01: 77 events", "timestamp": "2026-02-04T14:13:06.241332+00:00"}
+{"message": "Processed window 2024-10-01 to 2024-11-01: 67 events", "timestamp": "2026-02-04T14:13:07.319547+00:00"}
+{"message": "Processed window 2024-11-01 to 2024-12-01: 56 events", "timestamp": "2026-02-04T14:13:08.425628+00:00"}
+{"message": "Processed window 2024-12-01 to 2025-01-01: 39 events", "timestamp": "2026-02-04T14:13:09.384376+00:00"}
+{"message": "Processed window 2025-01-01 to 2025-02-01: 45 events", "timestamp": "2026-02-04T14:13:10.418456+00:00"}
+{"message": "Processed window 2025-02-01 to 2025-03-01: 46 events", "timestamp": "2026-02-04T14:13:11.407817+00:00"}
+{"message": "Processed window 2025-03-01 to 2025-04-01: 65 events", "timestamp": "2026-02-04T14:13:12.523229+00:00"}
+{"message": "Processed window 2025-04-01 to 2025-05-01: 61 events", "timestamp": "2026-02-04T14:13:13.715440+00:00"}
+{"message": "Processed window 2025-05-01 to 2025-06-01: 72 events", "timestamp": "2026-02-04T14:13:15.108712+00:00"}
+{"message": "Processed window 2025-06-01 to 2025-07-01: 68 events", "timestamp": "2026-02-04T14:13:16.372002+00:00"}
+{"message": "Processed window 2025-07-01 to 2025-08-01: 73 events", "timestamp": "2026-02-04T14:13:17.564093+00:00"}
+{"message": "Processed window 2025-08-01 to 2025-09-01: 75 events", "timestamp": "2026-02-04T14:13:18.766183+00:00"}
+{"message": "Processed window 2025-09-01 to 2025-10-01: 70 events", "timestamp": "2026-02-04T14:13:19.971194+00:00"}
+{"message": "Processed window 2025-10-01 to 2025-11-01: 67 events", "timestamp": "2026-02-04T14:13:21.331426+00:00"}
+{"message": "Processed window 2025-11-01 to 2025-12-01: 58 events", "timestamp": "2026-02-04T14:13:22.417636+00:00"}
+{"message": "Processed window 2025-12-01 to 2026-01-01: 58 events", "timestamp": "2026-02-04T14:13:24.257314+00:00"}
+{"message": "Processed window 2026-01-01 to 2026-02-01: 58 events", "timestamp": "2026-02-04T14:13:26.046270+00:00"}
+{"message": "Processed window 2026-02-01 to 2026-02-04: 6 events", "timestamp": "2026-02-04T14:13:26.762887+00:00"}
+{"message": "Finished downloading flood events. Total unique events: 3990", "timestamp": "2026-02-04T14:13:26.926364+00:00"}
+{"message": "Output saved to /eodc/private/tuwgeo/users/mabdelaa/repos/GDACS_Flood_DB/data/gdacs_daily_download/gdacs_flood_db_20260204.csv", "timestamp": "2026-02-04T14:13:26.929141+00:00"}
+{"message": "Download completed.", "timestamp": "2026-02-04T14:13:26.931823+00:00"}
+{"message": "Previous DB size: 3990 events", "timestamp": "2026-02-04T14:13:26.979631+00:00"}
+{"message": "New DB size: 3990 events", "timestamp": "2026-02-04T14:13:26.982701+00:00"}
+{"message": "New events detected: 0", "timestamp": "2026-02-04T14:13:26.986479+00:00"}
+{"message": "Changed existing events: 0", "timestamp": "2026-02-04T14:13:27.073829+00:00"}
+{"message": "No changes detected. Latest DB not updated.", "timestamp": "2026-02-04T14:13:27.077261+00:00"}
+{"message": "======================================================================", "timestamp": "2026-02-04T14:13:27.079936+00:00"}
+{"message": "Daily update completed successfully.", "timestamp": "2026-02-04T14:13:27.082504+00:00"}
+{"message": "======================================================================", "timestamp": "2026-02-04T14:13:27.084924+00:00"}
