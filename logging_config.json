@@ -6,7 +6,7 @@
       "format": "%(levelname)s: %(message)s",
       "datefmt": "%Y-%m-%dT%H:%M:%S%z"
     },
-    "json": {
+    "json_debug": {
       "()": "gdacs_flood_db.logger.MyJSONFormatter",
       "fmt_keys": {
         "level": "levelname",
@@ -18,36 +18,39 @@
         "line": "lineno",
         "thread_name": "threadName"
       }
+    },
+    "json_info": {
+      "()": "gdacs_flood_db.logger.MyJSONFormatter",
+      "fmt_keys": {
+        "message": "message",
+        "timestamp": "timestamp"
+      }
     }
   },
   "handlers": {
-    "stdout":
-    {
-      "class": "logging.StreamHandler",
-      "level": "DEBUG",
-      "formatter": "simple",
-      "filters":["non_error"],
-      "stream": "ext://sys.stdout"
-    },
     "stderr": {
       "class": "logging.StreamHandler",
-      "level": "WARNING",
+      "level": "ERROR",
       "formatter": "simple",
       "stream": "ext://sys.stderr"
     },
-    "file": {
+    "info_file": {
+      "class": "concurrent_log_handler.ConcurrentRotatingFileHandler",
+      "level": "INFO",
+      "formatter": "json_info",
+      "filename": "logs/info.log.jsonl",
+      "maxBytes": 100000000,
+      "backupCount": 3,
+      "encoding": "utf-8"
+    },
+    "debug_file": {
       "class": "concurrent_log_handler.ConcurrentRotatingFileHandler",
       "level": "DEBUG",
-      "formatter": "json",
-      "filename": "logs/logger.log.jsonl",
+      "formatter": "json_debug",
+      "filename": "logs/debug.log.jsonl",
       "maxBytes": 100000000,
-      "backupCount": 3, 
+      "backupCount": 3,
       "encoding": "utf-8"
-    }
-  },
-  "filters": {
-    "non_error": {
-      "()": "gdacs_flood_db.logger.NonErrorFilter"
     }
   },
   "loggers": {
@@ -55,7 +58,8 @@
       "level": "DEBUG",
       "handlers": [
         "stderr",
-        "file"
+        "info_file",
+        "debug_file"
       ]
     }
   }
